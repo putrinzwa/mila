@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Friends</title>
+</head>
+<body>
+
+    <h1>Invite Friends Out Together</h1>
+
+    <form id="inviteForm">
+        <label for="friendNames">Enter your friends' names (comma-separated):</label>
+        <input type="text" id="friendNames" name="friendNames" required>
+        <button type="button" onclick="inviteFriends()">Send Invitation</button>
+    </form>
+
+    <script>
+        function inviteFriends() {
+            // Get the input value
+            var friendNames = document.getElementById("friendNames").value;
+
+            // Create the invitation message
+            var invitationMessage = "Hey " + friendNames + "! Let's hang out together. How about grabbing a meal or going to a movie?";
+
+            // Display the invitation message (you can customize how you want to display it)
+            alert(invitationMessage);
+        }
+    </script>
+
+</body>
+</html>
